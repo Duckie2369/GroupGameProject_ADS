@@ -263,12 +263,12 @@ public class UI {
 		
 		g2.setFont(g2.getFont().deriveFont(Font.PLAIN, 22));
 		x += 32;
-		y += gp.tileSize+10;
+		y += gp.tileSize;
 		
 		// New line when meets \n
 		for(String line : currentDialogue.split("\n")){
 			g2.drawString(currentDialogue, x, y);
-			y += 48;
+			y += 32;
 		}
 		
 	}
